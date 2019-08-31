@@ -3,130 +3,181 @@
 
 <head>
 
- <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>ML,Mathematics and you</title>
+    <title>ML and You</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/scrolling-nav.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
-          <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#pre">Prerequisite</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
-              </li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pre">Prerequisite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-  <header class="text-white bg-dark">
-    <div class="container text-center">
-      <h1 class="display-4" >Vectors and Machine learning</h1>
-      <p class="text-muted">August 13 2019</p>
-    </div>
-  </header>
-
-  <section id="pre" class="justify-content-left">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 text-center mx-auto">
-          <h1>Prerequisite</h1>
+    <header class="text-white bg-dark">
+        <div class="container text-center">
+            <h1 class="display-4">Mathematics and ML</h1>
+            <h3 class="text-muted">Feature Vectors</h3>
+            <p class="text-muted">August 13 2019</p>
         </div>
-        <br>
-        <div class="col-lg-11">
-          <ul class="lead">
-            <li>Familarity with Cartesian coordinate system</li>
-            <li>Data Formats (CSV,JSON etc)</li>
-          </ul>
+    </header>
+
+    <section id="pre" class="justify-content-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center mx-auto">
+                    <h1>Prerequisite</h1>
+                </div>
+                <br>
+                <div class="col-lg-11">
+                    <ul class="lead">
+                        <li>Familarity with Cartesian coordinate system</li>
+                        <li>Data Formats (CSV,JSON etc)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
 
-  <section id="about" class="">
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-lg-8 text-center mx-auto">
-          <h1>Mathematics & ML </h2><h3 class="text-muted">Vectors</h3>
+
+    <section id="about" class="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 text-center mx-auto">
+                    <h1>Vectors</h2>
+                </div>
+                <div class="col-lg-11">
+                    <div class="image-wrapper float-left pr-3">
+                        <img max-width: 100% class="img-fluid" height="auto" src="../images/math_fun.png" alt="Applied">
+                    </div>
+                    <div class="single-post-content-wrapper p-3">
+                        <p class="lead">Well, today we are going to have a look at some of the concepts of Mathematics
+                            that are extensively used to simplify Machine learning problems.
+                            One of them is vectors.So lets see how is vector algebra applied in ML problems.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-11">
-        <div class="image-wrapper float-left pr-3">
-        <img  max-width: 100%  class="img-fluid" height="auto" src="../images/math_fun.png" alt="Applied">
-    </div>
-    <div class="single-post-content-wrapper p-3">
-        <p class="lead">Well, today we are going to have a look at some of the concepts of Mathematics 
-            that are extensively used to simplify Machine learning problems. 
-            One of them is vectors.So lets see how is vector algebra applied in ML problems.</p>
-</div>
-</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 text-center mx-auto">
-          <h2>Vectors Revisited</h2>
-          <p class="lead">Theoratical Defination:
-                <blockquote class="blockquote">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer class="blockquote-footer"><cite title="Source Title">Source Title</cite></footer>
-                      </blockquote>
-          </p>
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center mx-auto">
+                    <h2>Vectors Revisited</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0 ">Elements from vector space <i>V</i> are called vectors
+                            <small>(abstract algebra)</small></p>
+                        <i class="font-italic">or</i>
+                        <p class="mb-0">Vector <small>(denoted by</small> x&#x20d7; ) is a quantity having both
+                            magnitude and direction</p>
+                        <!-- <footer class="blockquote-footer"><cite title="Source Title">A generalized definition
+                        </cite></footer> -->
+                    </blockquote>
+
+                </div>
+                <p class="lead pull-left">
+                    Above are the most common definitions of vector which you
+                    may have read from books or internet sources like Wikipedia.
+                    In Machine learning vectors are specifically called <span style="background-color: yellow">feature
+                        vectors.</span>
+                    Later in this post you will get to know why do we call them <strong>feature vectors</strong>
+                    in particular, but before that let's check vector representation, revise some basic algebric
+                    operations on vectors, and also I will explain the
+                    real meaning of these operations when we encounter a real <a target="_blank"
+                        href="https://en.wikipedia.org/wiki/Data_set">dataset</a>
+                </p>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <h4>Linear Algebra representation</h4>
+                        <p>In mathematics vectors can be represented as <strong>v&#x20d7;</strong><br> <strong>
+                                v&#x20d7;= &lta, b&gt
+                                <small>or</small>
+                                v&#x20d7;= (a, b)
+                            </strong>
+                            where a and b are <span style="background-color: yellow">scaler quantities</span>
+                            representing different components comprising vector quantity v&#x20d7;
+                        </p>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <h4>Vectors in Python</h4>
+                        <p>
+<script src="https://gist.github.com/Navd15/efefd6eeb14e09c8a71947a4bea91b33.js"></script>
+
+The above code snippet shows some of the ways to represent vectors in computer programming using Python.
+There are two vectors namely <em>v & x</em> both having three components a, b and c. Now both of these are actually same in theoratical sense,
+only mere difference between vector variables <em>v & x</em> is their object type because later is created using numpy library.
+numpy being a powerfull utility library we use numpy for most of the operations (multidimensional array,generate random numbers) due to its
+speed and shothand properties<br>
+<span style="background-color:yellow">A note about vector space :</span><strong>For instance vectors x and v that we just 
+created are having their components (a,b and c) as scaler quantities so we can say that v,x &#8712; &#8477;³</strong><br>
+where &#8477; states that components of vectors <em>v & x</em> have real number values and superscript ³ denotes that vectos <em>v & x</em>
+have 3 components.<br>
+Above expression can be generalized to any vector &#8712; &#8477;ⁿ
+
+</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; Copyright 2019 Navd15.github.io
+            </p>
+        </div>
+        <!-- /.container -->
+    </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <script src="../js/scrolling-nav.js"></script>
 
 </body>
+
 </html>
