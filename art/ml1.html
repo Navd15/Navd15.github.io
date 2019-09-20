@@ -159,27 +159,31 @@
 
                             The above code snippet shows some of the ways to represent vectors in computer programming
                             using Python.
-                            There are two vectors namely <em>v & x</em> both having three components a, b and c. Now
+
+                            There are two vectors namely $\overrightarrow{v} and \overrightarrow{x}$ both having three components $a, b & c$.
+                            <br><br>
+                            Now
                             both of these are actually same in theoratical sense,
-                            only mere difference between vector variables <em>v & x</em> is their object type because
-                            later is created using numpy library.
-                            numpy being a powerfull utility library we use numpy for most of the operations
+                            only mere difference between vector variables $v & x$ is their object type because
+                            later one is created using numpy library.<br>
+
+                            numpy being a powerfull utility library, we use numpy for most of the operations
                             (multidimensional array,generate random numbers etc) due to its execution
-                            speed and shothand syntax.
+                            speed and shorthand syntax.
                             From now on we will use numpy for all operations and stuff for programming examples in
-                            Python.
-                            &nbsp&nbsp
+                            Python.<br><br>
+                            
                             <span style="background-color:yellow"> A note about vector space :</span><strong>For
                                 instance
                                 vectors x and v that we just
                                 created are having their components (a,b and c) as scaler quantities so we can say that
                                 v,x &#8712; &#8477;³ (vector space)</strong><br>
-                            where &#8477; states that components of vectors <em>v & x</em> are real number values and
-                            superscript ³ denotes that vectors <em>v & x</em>
+                            where &#8477; states that components of vectors v & x are real number values and
+                            superscript ³ denotes that vectors v & x
                             have 3 components each.<br>
                             Above expression can also be generalized for any vector $\overrightarrow{v}$ &#8712;
                             &#8477;ⁿ.<br>
-                            This is one defination of <em>vector space</em>. Here is a theroatical explanation of
+                            This is one defination of vector space. Here is a theroatical explanation of
                             <a target="_blank" href="https://en.wikipedia.org/wiki/Vector_space">vector space</a> if you
                             want to know more about them.
                         </p>
@@ -244,9 +248,9 @@
                         <div class="single-post-content-wrapper p-3">
                             <p>
                                 Unlike addition with scaler, addition of vector to a vector has one conditions:<br>
-                                <strong><em> Two vectors can be added iff both have same number of components or they
+                                <strong> Two vectors can be added iff both have same number of components or they
                                         reside in
-                                        same vector space $&#8477;ⁿ$<br></em></strong>
+                                        same vector space $&#8477;ⁿ$<br></strong>
                                 In vector to vector addition we just add the corresponding components of two or more
                                 vectors
                                 and we get another vector quantity in result<br>
@@ -267,14 +271,14 @@
                                                 vector represented, it starts from origin and goes to specific
                                                 direction.Some of you may be familiar with other
                                                 type of representation of vector addition, more formally known as
-                                                <strong><em>Triangle Law of vector addition</em></strong>,
+                                                <strong>Triangle Law of vector addition</strong>,
                                                 which you may have seen
                                                 during your physics or linear algebra class in high school.
                                                 <!-- <br> -->
-                                                <!-- <strong><em>Triangle Law of vector addition</em></strong> states that  -->
+                                                <!-- <strong>Triangle Law of vector addition</strong> states that  -->
                                                 <br>
                                                 Below figures <strong>fig.3(a)</strong> and <strong>fig.3(b)</strong>
-                                                represent the <strong><em>Triangle Law of vector addition</em></strong><br><br>
+                                                represent the <strong>Triangle Law of vector addition</strong><br><br>
                                               
                             </p>
                         </div>
@@ -302,9 +306,9 @@
                                 before.
                                 <br><br>
                                 From this we can conclude that vector addition is
-                                <strong><em>commutative</em></strong> i.e
+                                <strong>commutative</strong> i.e
                                 $\overrightarrow{v}$+$\overrightarrow{x}$=$\overrightarrow{x}$+$\overrightarrow{v}$<br><br>
-                                Along with commutative vector addition is also <em><strong>associative</strong></em>
+                                Along with commutative vector addition is also <strong>associative</strong>
                                 i.e
                                 $(\overrightarrow{v}+\overrightarrow{x})+\overrightarrow{c}
                                 =\overrightarrow{v}+(\overrightarrow{x}+\overrightarrow{c})$
@@ -322,7 +326,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWsAAAElCAYAAAAiFMNkAAAINHRFW
                         <div class="single-post-content-wrapper p-3">
 
                             <p>
-                                As stated above, vector addition is <strong><em>commutative</em></strong>, so in adjacent figure 
+                                As stated above, vector addition is <strong>commutative</strong>, so in adjacent figure 
                                 <strong>fig. 3(c)</strong> if addition $\overrightarrow{v} + \overrightarrow{x}$
                                 is mirrored we obtain a hypothetical parallelogram $ABCD$, now the result 
                                 of $\overrightarrow{v} + \overrightarrow{x}$ from both 
@@ -340,7 +344,14 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWsAAAElCAYAAAAiFMNkAAAINHRFW
                     <h5 class="text-muted">Vector Addition in Python</h5>
 
                     <script src="https://gist.github.com/Navd15/00e16332725203f189a2869db61c8aee.js"></script>
+<p>
+The above code snippet shows scaler and vector addition in Python,although most of the code is self explanatory,there are some 
+important points to notice.<br>
+Recall that addition between vectors from different vector space is not valid in vector algebra, so in line $20$ 
+when we try to add $\overrightarrow{c} to \overrightarrow{x}$ numpy throws ValueError exception in line $21$ indicating about
+different shapes of  $\overrightarrow{c} and \overrightarrow{x}$
 
+</p>
                 </ul>
             <!-- </div> -->
         </div>
