@@ -42,12 +42,8 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
-            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -62,7 +58,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <header class="text-white bg-dark">
         <div class="container text-center">
@@ -352,8 +348,46 @@ when we try to add $\overrightarrow{c} to \overrightarrow{x}$ numpy throws Value
 different shapes of  $\overrightarrow{c} and \overrightarrow{x}$
 
 </p>
+
+<li class="nav-item"><h4>Vector magnitude</h4></li>
+<p>As stated above two terms magnitude or length of a vector can be used interchangeably, now lets see 
+    how to compute it.Magnitude of a vector is represented by $|\overrightarrow{v}|$
+    <br>
+     Consider $\overrightarrow{v} = <3,4>$ <br>
+     $|\overrightarrow{v}|= \sqrt{(3-0)^2+(4-0)^2} \\ |\overrightarrow{v}|=5$ <br>
+     Magnitude of any vector is defined as length of vector from origin.Origin being $(0,0)$, $|\overrightarrow{v}|$ can be directly written as<br>
+     $|\overrightarrow{v}|= \sqrt{(3)^2+(4)^2} \\ |\overrightarrow{v}|=5$
+<br>
+Magnitude for any vector with $n$ components can be generalized as<br>
+
+$|\overrightarrow{v}|= \sqrt{\sum\limits_{i=1}^{n} x_{i}^2}$<br>
+At this point you may argue that its the same way we calculate distance of a point in $xy$ plane from origin
+in coordinate geometry which is formally known as <b>Euclidean distance</b>, but in vector algebra it is known as 
+<b>norm(s)</b>.There are different type of norms available in vector algebra to calculate length of a vector.
+The one we just discussed is known as <b>L-2 norm</b> of $\overrightarrow{v}$ and it is written as<br>
+$||\overrightarrow{v}||_2$       
+    </p>
+    <li class="nav-item"><h5>Extension to Norms: Distance between two vectors </h5></li>
+    <p>
+An important application of norms is to find the distance between the two vectors, it is known as L-2 norm of $(\overrightarrow{v}-\overrightarrow{x})$
+and is calculated as<br>
+$||(\overrightarrow{v}-\overrightarrow{x})||_2=\sqrt{\sum\limits_{i=1}^{n} (v_{i}-x_{i})^2}$<br>
+For example <br> $\overrightarrow{v}= <6,9> and \overrightarrow{x}=<2,6> \\
+    ||(\overrightarrow{v}-\overrightarrow{x})||_2= \sqrt{(v_1-x_1)^2+(v_2-x_2)^2} \\
+    ||(\overrightarrow{v}-\overrightarrow{x})||_2= \sqrt{(6-2)^2+(9-6)^2}
+     =\sqrt{16+9}=5$
+     <br>
+    </p>
+     <script src="https://gist.github.com/Navd15/04654a1047d08715694c5d7c3b318357.js"></script>
+     <p>
+     <!-- <br> -->
+     Above code snippet shows $||\overrightarrow{a}||_2$ and $||\overrightarrow{a}-\overrightarrow{b}||_2$ <br>
+     Notice that <code>numpy.linalg.norm</code> takes only one argument of array type i.e a vector, we can either pass another vector <br>
+     $\overrightarrow{c}=\overrightarrow{a}-\overrightarrow{b}$ or $\overrightarrow{a}-\overrightarrow{b}$ as it is.
+            
+</p>    
+
                 </ul>
-            <!-- </div> -->
         </div>
     </section>
 
