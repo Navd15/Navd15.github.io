@@ -125,6 +125,26 @@ Before we connect mathematics and theory we need to learn some ML terminology.
     <img src="../images/m2/target.jpg"><br>
 The above code snippet displays 6 random rows, note that each row has 'class' specified under the 'target' column as one of the three values from setosa, versicolor or veginica. We can say that in this dataset target values has three classes, but in some other dataset target column can also have real vaulues.
 </p>
+<li><b>Classification and Regression</b></li>
+<p>
+Many times ML is used to solve predictive problems. The predictive problems can be classified into two categories:
+<ul>
+    <li>Classification:</li>
+    <p>In these type of problems the target column contains the discrete values or different classes. For example it could either be divided into binary like  0/1 or may be into +ve and -ve class. Iris dataset is an example of classification problem in which we have class lables (setosa, versicolor and virginica). Some more examples of classification are:<br>
+    $(i)$ Predicting if the given review about some product is negative or positive- Target column may contain +ve and -ve or may be 0 for negative and 1 for positive.<br>
+    $(ii)$ Analysing the X-ray image of tumor and predicting if tumor is cancerous or not- Target column may contain 0 or 1 values.<br>
+    $(iii)$ Predicting if the given email can be categorized into spam or not- Target column may contain 0/1 or "spam"/"not spam" values
+    </p>
+<li>Regression:</li>
+<p>In these type of predictive problems unlike classification, target column contains continous values. Most of the times in regression problems target values are real values. <br>
+    <img src="../images/m2/regression_eg.jpg"><br>
+    The above snippet is from famous Boston house-price dataset, note that "Price" column being target column contains the prices of house based on the features from various aspects. In the target column we have real values as the median price of owner occupied homes in \$1000s. Some more examples of regression problems are:<br>
+$(i)$ Predicting the price of a stock.<br>
+$(ii)$ Predicting the release year of a song from audio features<br>
+$(iii)$ Predicting the student performance in secondary education (high school). 
+</p>
+</ul>
+</p>
 <li><b>Machine Learning Model:</b></li>
 <p>
 A ML model can be described as any sequence of functions which take features as an Input and generates some prediction from them. For instance if we are given a task of predicting the class of iris flowers from a given set of 'features' then we need to make a model for this problem.<br>
@@ -135,13 +155,14 @@ $2.$ $93$% of flowers which have 'sepal width' less than $3.0 cm$ are either 've
 Now as we have above inference, a simple ML model could be like :<br>
 <code>
 if sepal_length > 5.6:<br>
-  return 'versicolor or virginica' <br>
+&nbsp; return 'versicolor or virginica' <br>
 else:<br>
-  return 'setosa'
+&nbsp;return 'setosa'
 </code><br>
 The above code is just an intuition of ML model, in real world problems making an ML model is not that simple.
 </p>
-      
+
+As we know some basics of ML termiology we can start connecting dots between Mathematics and Data.
 </p>
 
                 </div>
@@ -152,7 +173,24 @@ The above code is just an intuition of ML model, in real world problems making a
         </div>
 
     </section>
-    <!-- Bootstrap core JavaScript -->
+    <section>
+<div class="container">
+<div class="row">
+<div class="col-lg-20">
+    <h4 class="font-weight-bold"> K-NN - A perfect example of applied Mathematics </h4>
+<p>
+K-NN (K Nearest Neighbours) is the simplest ML algorithm which is used for both classification and regression purposes. Understanding the internal working of K-NN algorithm will give us intituiton about how simple mathematics help us solve ML problems.<br>
+<img src="../images/m2/KNN_geometric.jpg"><br>
+Let us assume that we have a dataset with two features 'x1' and 'x2', both having real values 
+</p>
+</div>
+</div>
+</div>
+
+
+    </section>
+    
+    <!-- Bootstrap core JavaScript -->  
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
