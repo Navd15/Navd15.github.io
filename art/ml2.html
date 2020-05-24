@@ -3,7 +3,7 @@
 
 <head>
     <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
+        MathJax.Hub.Config({
               extensions: ["tex2jax.js"],
               jax: ["input/TeX", "output/HTML-CSS"],
               tex2jax: {
@@ -113,60 +113,108 @@
                         samples from the iris flower plant, classifying them into its different species based
                         on the following features: <br>
                         (i) Sepal Length<br>(ii) Sepal Width <br>(iii) Petal Lenght<br> (iv) Petal Width <br>
-Before we connect mathematics and theory we need to learn some ML terminology.
+                        Before we connect mathematics and theory we need to learn some ML terminology.
 
-<li><b>Features:</b></li>
-<p>The features in a ML problem are the attributes or properties which can have real values, binary, or String values sometimes. The below code snippet is from iris dataset :<br>
-    <img  src="../images/m2/features.jpg"><br>
-    In this dataset all the features (sepal length ,sepal width , petal length and petal width ) have real values. Feature count in a dataset can vary from 1 to 100K depending upon the problem to be solved. We use feature values to construct a Machine Learning model from them and also use these values directly or indirectly as input to that model for results.
-</p>
-    <li><b>Target or Labels:</b></li>
-    <p>In datasets each row of different feature values corresponds to some class or  a real value which we want to predict or analyse, this coulmn in a dataset can be called as target or label column. Particularly in most of the ML the problem is to predict value or  a class from the given value of features.<br>
-    <img src="../images/m2/target.jpg"><br>
-The above code snippet displays 6 random rows, note that each row has 'class' specified under the 'target' column as one of the three values from setosa, versicolor or veginica. We can say that in this dataset target values has three classes, but in some other dataset target column can also have real vaulues.
-</p>
-<li><b>Classification and Regression</b></li>
-<p>
-Many times ML is used to solve predictive problems. The predictive problems can be classified into two categories:
-<ul>
-    <li>Classification:</li>
-    <p>In these type of problems the target column contains the discrete values or different classes. For example it could either be divided into binary like  0/1 or may be into +ve and -ve class. Iris dataset is an example of classification problem in which we have class lables (setosa, versicolor and virginica). Some more examples of classification are:<br>
-    $(i)$ Predicting if the given review about some product is negative or positive- Target column may contain +ve and -ve or may be 0 for negative and 1 for positive.<br>
-    $(ii)$ Analysing the X-ray image of tumor and predicting if tumor is cancerous or not- Target column may contain 0 or 1 values.<br>
-    $(iii)$ Predicting if the given email can be categorized into spam or not- Target column may contain 0/1 or "spam"/"not spam" values
-    </p>
-<li>Regression:</li>
-<p>In these type of predictive problems unlike classification, target column contains continous values. Most of the times in regression problems target values are real values. <br>
-    <img src="../images/m2/regression_eg.jpg"><br>
-    The above snippet is from famous Boston house-price dataset, note that "Price" column being target column contains the prices of house based on the features from various aspects. In the target column we have real values as the median price of owner occupied homes in \$1000s. Some more examples of regression problems are:<br>
-$(i)$ Predicting the price of a stock.<br>
-$(ii)$ Predicting the release year of a song from audio features<br>
-$(iii)$ Predicting the student performance in secondary education (high school). 
-</p>
-</ul>
-</p>
-<li><b>Machine Learning Model:</b></li>
-<p>
-A ML model can be described as any sequence of functions which take features as an Input and generates some prediction from them. For instance if we are given a task of predicting the class of iris flowers from a given set of 'features' then we need to make a model for this problem.<br>
-Lets assume that we analysed the dataset and found the following inferences:<br>
-$1.$ $99.5$% of flowers which have 'sepal length' below $5.6 cm$ are 'setosa'.<br>
-$2.$ $93$% of flowers which have 'sepal width' less than $3.0 cm$ are either 'versicolor' or 'virginica'.<br>
+                        <li><b>Features:</b></li>
+                    <p>The features in a ML problem are the attributes or properties which can have real values,
+                        binary,
+                        or String values sometimes. The below code snippet is from iris dataset :<br>
+                        <img src="../images/m2/features.jpg"><br>
+                        In this dataset all the features (sepal length ,sepal width , petal length and petal width )
+                        have real values. Feature count in a dataset can vary from 1 to 100K depending upon the
+                        problem
+                        to be solved. We use feature values to construct a Machine Learning model from them and also
+                        use
+                        these values directly or indirectly as input to that model for results.
+                    </p>
+                    <li><b>Target or Labels:</b></li>
+                    <p>In datasets each row of different feature values corresponds to some class or a real value
+                        which
+                        we want to predict or analyse, this coulmn in a dataset can be called as target or label
+                        column.
+                        Particularly in most of the ML the problem is to predict value or a class from the given
+                        value
+                        of features.<br>
+                        <img src="../images/m2/target.jpg"><br>
+                        The above code snippet displays 6 random rows, note that each row has 'class' specified
+                        under
+                        the 'target' column as one of the three values from setosa, versicolor or veginica. We can
+                        say
+                        that in this dataset target values has three classes, but in some other dataset target
+                        column
+                        can also have real vaulues.
+                    </p>
+                    <li><b>Classification and Regression</b></li>
+                    <p>
+                        Many times ML is used to solve predictive problems. The predictive problems can be
+                        classified
+                        into two categories:
+                    <ul>
+                        <li>Classification:</li>
+                        <p>In these type of problems the target column contains the discrete values or different
+                            classes. For example it could either be divided into binary like 0/1 or may be into
+                            +ve and
+                            -ve class. Iris dataset is an example of classification problem in which we have
+                            class
+                            lables (setosa, versicolor and virginica). Some more examples of classification
+                            are:<br>
+                            $(i)$ Predicting if the given review about some product is negative or positive-
+                            Target
+                            column may contain +ve and -ve or may be 0 for negative and 1 for positive.<br>
+                            $(ii)$ Analysing the X-ray image of tumor and predicting if tumor is cancerous or
+                            not-
+                            Target column may contain 0 or 1 values.<br>
+                            $(iii)$ Predicting if the given email can be categorized into spam or not- Target
+                            column may
+                            contain 0/1 or "spam"/"not spam" values
+                        </p>
+                        <li>Regression:</li>
+                        <p>In these type of predictive problems unlike classification, target column contains
+                            continous
+                            values. Most of the times in regression problems target values are real values. <br>
+                            <img src="../images/m2/regression_eg.jpg"><br>
+                            The above snippet is from famous Boston house-price dataset, note that "Price"
+                            column being
+                            target column contains the prices of house based on the features from various
+                            aspects. In
+                            the target column we have real values as the median price of owner occupied homes in
+                            \$1000s. Some more examples of regression problems are:<br>
+                            $(i)$ Predicting the price of a stock.<br>
+                            $(ii)$ Predicting the release year of a song from audio features<br>
+                            $(iii)$ Predicting the student performance in secondary education (high school).
+                        </p>
+                    </ul>
+                    </p>
+                    <li><b>Machine Learning Model:</b></li>
+                    <p>
+                        A ML model can be described as any sequence of functions which take features as an Input and
+                        generates some prediction from them. For instance if we are given a task of predicting the
+                        class
+                        of iris flowers from a given set of 'features' then we need to make a model for this
+                        problem.<br>
+                        Lets assume that we analysed the dataset and found the following inferences:<br>
+                        $1.$ $99.5$% of flowers which have 'sepal length' below $5.6 cm$ are 'setosa'.<br>
+                        $2.$ $93$% of flowers which have 'sepal width' less than $3.0 cm$ are either 'versicolor' or
+                        'virginica'.<br>
 
-Now as we have above inference, a simple ML model could be like :<br>
-<code>
-if sepal_length > 5.6:<br>
-&nbsp; return 'versicolor or virginica' <br>
-else:<br>
-&nbsp;return 'setosa'
-</code><br>
-The above code is just an intuition of ML model, in real world problems making an ML model is not that simple.
-</p>
+                        Now as we have above inference, a simple ML model could be like :<br>
+                        <code>
+                                if sepal_length > 5.6:<br>
+                                &nbsp; return 'versicolor or virginica' <br>
+                                else:<br>
+                                &nbsp;return 'setosa'
+                            </code><br>
+                        The above code is just an intuition of ML model, in real world problems making an ML model
+                        is
+                        not that simple.
+                    </p>
 
-As we know some basics of ML termiology we can start connecting dots between Mathematics and Data.
-</p>
+                    As we know some basics of ML termiology we can start connecting dots between Mathematics and
+                    Data.
+                    </p>
 
                 </div>
-                
+
             </div>
 
 
@@ -174,38 +222,215 @@ As we know some basics of ML termiology we can start connecting dots between Mat
 
     </section>
     <section>
-<div class="container">
-<div class="row">
-<div class="col-lg-20">
-    <h4 class="font-weight-bold"> K-NN - A perfect example of applied Mathematics </h4>
-<p>
-K-NN (K Nearest Neighbours) is the simplest ML algorithm which is used for both classification and regression purposes. Understanding the internal working of K-NN algorithm will give us intituiton about how simple mathematics help us solve ML problems.<br>
-<img src="../images/m2/KNN_geometric.jpg"><br>
-Let us assume that we have a dataset with two features 'x' and 'y', both having real values and target column containing 0,1.
-Plotting the target column we can label them as Green and Red for 1 , 0 respectively on a 2D axis.<br>
-Following table shows the structure of dataset:<br>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="328" viewBox="-0.5 -0.5 328 146" content="&lt;mxfile modified=&quot;2020-05-18T21:03:41.089Z&quot; host=&quot;app.diagrams.net&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edg/81.0.416.72&quot; etag=&quot;uTkWbopdhJfsbtzOfZIH&quot; version=&quot;13.1.2&quot; type=&quot;github&quot;&gt;&lt;diagram id=&quot;wtCtrfCeRtKK0qYFsVmb&quot; name=&quot;Page-1&quot;&gt;5ZdLc5swEIB/DUd7QHJJfKxp0h7aQyeHtqeOABmYCESFiKG/vhISDxnsQMYeTyc+2OjbRfuSPLsW9NLqM0N5/I2GmFjADisLfrIAuANQfEtQK7CBGkQsCRWye/CU/MUKOi0tkxAXminEKSU8yU0Y0CzDATcYYoweTLU9JaEBchThEXgKEBnTH0nIY0XvwV3Pv+AkilvLjrtVEh8FzxGjZabtZTTDSpKidhu9eRGjkB4GCD5Y0GOUcvWUVh4mMqtmxh5PSDuXGc74nBd+/0x+OV8P3xGIXQLKnbfxtitdphdESp0KC7hE7LfjyBfZERFSFmLWyNw/pXR25/SPQuHQJayT28KTD4ZSwWud6xbq1z4KYatvK91YZ3pCpJxZBZQQlBdY6XSrgUE30r8qFp+Kk3kM2YiEx8Qf6Yj8jtV6Us3Uq2fqccQizM8qSzgO5UxwztJYihxlkzXc04yviuY2q2Ll1ekiFKU/5cEAD2ljclHq6zcZOrejfdm8d1fr7adqbiXu11B+psoBXsnyYufqpc7NPiaGq7OPyeIAzt+HxWWGNygqvHROrldUw9X/pqibGxR1c+mcXK+ohqvXK+qF/5DX6/VMw7fQfA/hSDjVm0mu+s+WA+O8Ao4ryWOeEgEceRo5o8/Yo4TKZrXpw8V5Tgg5QvQFsz1pGnEpFQSRJMrEMhCNtOx0tTWhJ6ycbLb7Fl4MRZimmDMRhq1fALaebPRAtAVq2TfLALYjUTycLKAeLJCeaKJu6761Fw+6u2+X/RTRyAZDGnz4Bw==&lt;/diagram&gt;&lt;/mxfile&gt;" onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&amp;&amp;src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&amp;&amp;!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&amp;&amp;evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://app.diagrams.net/?client=1&amp;lightbox=1&amp;edit=_blank');}}})(this);" style="cursor:pointer;max-width:100%;max-height:146px;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"/><feOffset in="blur" dx="3" dy="3" result="offsetBlur"/><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"/><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"/><feBlend in="SourceGraphic" in2="offsetBlur"/></filter><style xmlns="http://www.w3.org/1999/xhtml" type="text/css">.MathJax_Preview {color: #888}&#xa;#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}&#xa;#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}&#xa;.MathJax_Error {color: #CC0000; font-style: italic}&#xa;</style></defs><g filter="url(#dropShadow)"><rect x="0" y="0" width="320" height="139" fill="none" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 322px; height: 139px; padding-top: 0px; margin-left: -1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; width: 322px; height: 139px; overflow: hidden; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; "><table border="1" width="100%" style="width: 100% ; height: 100% ; border-collapse: collapse"><tbody><tr><td><br /></td><td>x</td><td>y</td><td>target</td></tr><tr><td>1</td><td>x<span style="font-size: 10px"><sub>1</sub></span></td><td>y<sub>1</sub></td><td>0</td></tr><tr><td>2<br /></td><td>x<span style="font-size: 8.33333px">2</span><br /></td><td>y<span style="font-size: 10px"><sub>2</sub></span><br /></td><td>1</td></tr><tr><td>3</td><td>x<span style="font-size: 8.33333px">3</span><br /></td><td>y<span style="font-size: 10px"><sub>3</sub></span><br /></td><td>1</td></tr><tr><td>4</td><td>x<span style="font-size: 8.33333px">4</span><br /></td><td>y<span style="font-size: 10px"><sub>4</sub></span><br /></td><td>0</td></tr><tr><td>...</td><td>...</td><td>...</td><td>...</td></tr><tr><td>...</td><td>...</td><td>...</td><td>...</td></tr></tbody></table></div></div></div></foreignObject><text x="160" y="12" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">xytarget1x1y102...</text></switch></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer does not support full SVG 1.1</text></a></switch></svg>
-<br>
-Each data point can be represented as row vector for example  datapoint $D_1$ can be represented as  $\begin{bmatrix} x_1 & y_1\end{bmatrix}$<br>
-Now a question that arises is, given a point $x_q$ with known features $\begin{bmatrix} x_q & y_q\end{bmatrix}$ is there any 
-way we can classify it as 0 or 1 using the given data. Way the KNN algorithm works is based on the distace between the points or 
-more formally as the difference between points. Just think if someone asks "Out of the list $[3,8,11,20,100,222]$ filter 3 numbers which are most closest to $2$ ", anyone can find that numbers
-by just taking difference between $2$ and each item in the list.<br>
-This is the main idea behind the working of KNN, difference being in KNN we have to deal with the distance between vectors rather than scalers.
-<br>
-To understand the algorithm completely, lets zoom in to the above graphed pioints where  the  query point  $x_q $ is located:<br>
-<!----link to image here-->
-<br>
-In the above image if we calculate distance between $x_q$ and all the given points
-</p>
-</div>
-</div>
-</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-20">
+                    <h4 class="font-weight-bold"> K-NN - A perfect example of applied Mathematics </h4>
+                    <p>
+                        K-NN (K Nearest Neighbours) is the simplest ML algorithm which is used for both classification
+                        and regression purposes. Understanding the internal working of K-NN algorithm will give us
+                        intituiton about how mathematics helps us to solve ML problems.<br>
+                        <img src="../images/m2/KNN_geometric.jpg"><br>
+                        Let us assume that we have a dataset with two features 'x' and 'y', both having real values and
+                        target column containing 0,1.
+                        Plotting the target column we can label them as Green and Red for 1 , 0 respectively on a 2D
+                        axis.<br>
+                        Following table shows the structure of dataset:<br>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            width="328" viewBox="-0.5 -0.5 328 146"
+                            content="&lt;mxfile modified=&quot;2020-05-18T21:03:41.089Z&quot; host=&quot;app.diagrams.net&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edg/81.0.416.72&quot; etag=&quot;uTkWbopdhJfsbtzOfZIH&quot; version=&quot;13.1.2&quot; type=&quot;github&quot;&gt;&lt;diagram id=&quot;wtCtrfCeRtKK0qYFsVmb&quot; name=&quot;Page-1&quot;&gt;5ZdLc5swEIB/DUd7QHJJfKxp0h7aQyeHtqeOABmYCESFiKG/vhISDxnsQMYeTyc+2OjbRfuSPLsW9NLqM0N5/I2GmFjADisLfrIAuANQfEtQK7CBGkQsCRWye/CU/MUKOi0tkxAXminEKSU8yU0Y0CzDATcYYoweTLU9JaEBchThEXgKEBnTH0nIY0XvwV3Pv+AkilvLjrtVEh8FzxGjZabtZTTDSpKidhu9eRGjkB4GCD5Y0GOUcvWUVh4mMqtmxh5PSDuXGc74nBd+/0x+OV8P3xGIXQLKnbfxtitdphdESp0KC7hE7LfjyBfZERFSFmLWyNw/pXR25/SPQuHQJayT28KTD4ZSwWud6xbq1z4KYatvK91YZ3pCpJxZBZQQlBdY6XSrgUE30r8qFp+Kk3kM2YiEx8Qf6Yj8jtV6Us3Uq2fqccQizM8qSzgO5UxwztJYihxlkzXc04yviuY2q2Ll1ekiFKU/5cEAD2ljclHq6zcZOrejfdm8d1fr7adqbiXu11B+psoBXsnyYufqpc7NPiaGq7OPyeIAzt+HxWWGNygqvHROrldUw9X/pqibGxR1c+mcXK+ohqvXK+qF/5DX6/VMw7fQfA/hSDjVm0mu+s+WA+O8Ao4ryWOeEgEceRo5o8/Yo4TKZrXpw8V5Tgg5QvQFsz1pGnEpFQSRJMrEMhCNtOx0tTWhJ6ycbLb7Fl4MRZimmDMRhq1fALaebPRAtAVq2TfLALYjUTycLKAeLJCeaKJu6761Fw+6u2+X/RTRyAZDGnz4Bw==&lt;/diagram&gt;&lt;/mxfile&gt;"
+                            onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&amp;&amp;src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&amp;&amp;!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&amp;&amp;evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://app.diagrams.net/?client=1&amp;lightbox=1&amp;edit=_blank');}}})(this);"
+                            style="cursor:pointer;max-width:100%;max-height:146px;">
+                            <defs>
+                                <filter id="dropShadow">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur" />
+                                    <feOffset in="blur" dx="3" dy="3" result="offsetBlur" />
+                                    <feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor" />
+                                    <feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur" />
+                                    <feBlend in="SourceGraphic" in2="offsetBlur" />
+                                </filter>
+                                <style xmlns="http://www.w3.org/1999/xhtml" type="text/css">
+                                    .MathJax_Preview {
+                                        color: #888
+                                    }
+
+                                    &#xa;
+
+                                    #MathJax_Message {
+                                        position: fixed;
+                                        left: 1em;
+                                        bottom: 1.5em;
+                                        background-color: #E6E6E6;
+                                        border: 1px solid #959595;
+                                        margin: 0px;
+                                        padding: 2px 8px;
+                                        z-index: 102;
+                                        color: black;
+                                        font-size: 80%;
+                                        width: auto;
+                                        white-space: nowrap
+                                    }
+
+                                    &#xa;
+
+                                    #MathJax_MSIE_Frame {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 0px;
+                                        z-index: 101;
+                                        border: 0px;
+                                        margin: 0px;
+                                        padding: 0px
+                                    }
+
+                                    &#xa;
+
+                                    .MathJax_Error {
+                                        color: #CC0000;
+                                        font-style: italic
+                                    }
+
+                                    &#xa;
+                                </style>
+                            </defs>
+                            <g filter="url(#dropShadow)">
+                                <rect x="0" y="0" width="320" height="139" fill="none" stroke="none"
+                                    pointer-events="all" />
+                                <g transform="translate(-0.5 -0.5)">
+                                    <switch>
+                                        <foreignObject style="overflow: visible; text-align: left;"
+                                            pointer-events="none" width="100%" height="100%"
+                                            requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                                            <div xmlns="http://www.w3.org/1999/xhtml"
+                                                style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 322px; height: 139px; padding-top: 0px; margin-left: -1px;">
+                                                <div
+                                                    style="box-sizing: border-box; font-size: 0; text-align: center; width: 322px; height: 139px; overflow: hidden; ">
+                                                    <div
+                                                        style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; ">
+                                                        <table border="1" width="100%"
+                                                            style="width: 100% ; height: 100% ; border-collapse: collapse">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><br /></td>
+                                                                    <td>x</td>
+                                                                    <td>y</td>
+                                                                    <td>target</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>x<span
+                                                                            style="font-size: 10px"><sub>1</sub></span>
+                                                                    </td>
+                                                                    <td>y<sub>1</sub></td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2<br /></td>
+                                                                    <td>x<span
+                                                                            style="font-size: 8.33333px">2</span><br />
+                                                                    </td>
+                                                                    <td>y<span
+                                                                            style="font-size: 10px"><sub>2</sub></span><br />
+                                                                    </td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>x<span
+                                                                            style="font-size: 8.33333px">3</span><br />
+                                                                    </td>
+                                                                    <td>y<span
+                                                                            style="font-size: 10px"><sub>3</sub></span><br />
+                                                                    </td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>x<span
+                                                                            style="font-size: 8.33333px">4</span><br />
+                                                                    </td>
+                                                                    <td>y<span
+                                                                            style="font-size: 10px"><sub>4</sub></span><br />
+                                                                    </td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                    <td>...</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </foreignObject><text x="160" y="12" fill="#000000" font-family="Helvetica"
+                                            font-size="12px" text-anchor="middle">xytarget1x1y102...</text>
+                                    </switch>
+                                </g>
+                            </g>
+                            <switch>
+                                <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" /><a
+                                    transform="translate(0,-5)"
+                                    xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                                    target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer
+                                        does not support full SVG 1.1</text></a></switch>
+                        </svg>
+                        <br>
+                        Each data point can be represented as row vector for example data point $D_1$ can be represented
+                        as $\begin{bmatrix} x_1 & y_1\end{bmatrix}$<br>
+                        Now a question that arises is, given a point $x_q$ with known features $\begin{bmatrix} x_q &
+                        y_q\end{bmatrix}$ is there any
+                        way we can classify it as 0 or 1 using the given data. Way the KNN algorithm works is based on
+                        the distace between the points or 
+                        more formally as the difference between points. Just think if someone asks "Out of the list
+                        $[3,8,11,20,100,222]$ filter 3 numbers which are most closest to $2$ ", anyone can find that
+                        numbers
+                        by just taking difference between $2$ and each item in the list.<br>
+                        This is the main idea behind the working of KNN, difference being in KNN we have to deal with
+                        the distance between vectors rather than scalers.
+                        <br>
+                        To understand the algorithm completely, lets zoom into the above graphed points where the
+                        query point $x_q $ is located:<br>
+                        <img style="max-width: 40%;" src="../images/m2/KNN_zoom.jpg">
+                        <br>
+                        In the above image if we calculate distance between $x_q$ and all the given points, the top 5
+                        closest points to $x_q $ can be labelled. Now, out of top $5$ closest points to $x_q$ 3 are
+                        green and 2 are red i.e probabililty that $x_q$ belongs to Green (1) class is $\frac{3}{5}=0.6$
+                        or there is $60\%$ chance that $x_q$ belongs to Green (1) class. <br>
+                    <h5>Distance Calculation :</h5><br>
+                    As stated in <a href="./ml1.html">part 1</a> the distance between two vectors is defined by the L-2
+                    norm between two vectors. In this case distance between the query point $x_q$ and data points is:<br>
+                    distance $=\sqrt{\sum_{i=1}^{m}(x_{qi}-d_i)^2}$<br>
+                    where $m$ $\in$ number of features in a dataset.<br>
+                    So if we want to find the similarity between $x_q$ and $d_1$=<br>
+                    $\sqrt{(x_{q1}-x_1)^2+(y_{q2}-y_1)^2}$ <br>
+                    But we need to find the distance between all the points and $x_q$ to determine the top 5 closest distances. If total number of data points is $n$ then pseudo code to find the 5 shortest distance is :<br>
+                    <code>
+1.for each data point $d_i$ where i= 0 to n :<br>
+    &nbsp; measure L-2 norm between </code>$x_q$ and $d_i$<br>
+    <code>&nbsp; append the L-2 norm of </code> $x_q$ and $d_i$ <code >to list</code><br>
+    <code>
+2.sort the list for first 5 shortest distances<br>
+                        </code><br>
+  
+                 </p>
+                </div>
+            </div>
+        </div>
 
 
     </section>
-    
-    <!-- Bootstrap core JavaScript -->  
+
+    <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
